@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title> 
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+  
+<!-- headings and such -->
+
+  <h1>Tech Store</h1>
+  <h2>Designed by Joshua Pilay</h2>
+
+
+<hr>
+
+<div class="container megadiv">
+
+<div class="row">
+  
+  <div class="col">
+
+    <br>
+    <br>
+    <!-- headings for specific things -->
+    <div class="container-fluid headings">
+      <div class="row">
+       <div class="col-lg-3">
+        View
+        </div>
+        <div class="col-lg-3">
+        Name
+       </div>
+       <div class="col-lg-3">
+         Price
+       </div>
+       <div class="col-lg-3">
+         Amount
+       </div>
+      </div>
+    </div>
+
+
+    <!-- box that will house a product -->
+
+    <div class="items">
+    
+      <div class="container boundingbox">
+       <div class="row">
+          <div class="col-sm-3">
+            <img src="images/laptop.png" alt="laptop">
+          </div>
+          <div class="col-sm-3">
+            Laptop
+          </div>
+          <div class="col-sm-3" id="laptopPrice">
+            $499.99
+          </div>
+          <div class="col-sm-3">
+            <button type="button" onclick="removeItem(document.getElementById('laptop'))">-</button>
+            <p id="laptop">0</p>
+            <button type="button" onclick="addItem(document.getElementById('laptop'))">+</button>
+          </div>
+        </div>
+     </div>
+
+      <div class="container boundingbox">
+        <div class="row">
+         <div class="col-sm-3">
+            <img src="images/keyboard.png" alt="keyboard">
+          </div>
+          <div class="col-sm-3">
+           Keyboard
+          </div>
+          <div class="col-sm-3" id="keyboardPrice">
+           $39.99
+         </div>
+          <div class="col-sm-3">
+            <button type="button" onclick="removeItem(document.getElementById('keyboard'))">-</button>
+            <p id="keyboard">0</p>
+            <button type="button" onclick="addItem(document.getElementById('keyboard'))">+</button>
+         </div>
+        </div>
+      </div>
+
+      <div class="container boundingbox">
+       <div class="row">
+          <div class="col-sm-3">
+           <img src="images/mouse.png" alt="mouse">
+         </div>
+         <div class="col-sm-3">
+           Mouse
+         </div>
+         <div class="col-sm-3" id="mousePrice">
+           $25.99
+         </div>
+         <div class="col-sm-3">
+          <button type="button" onclick="removeItem(document.getElementById('mouse'))">-</button>
+          <p id="mouse">0</p>
+          <button type="button" onclick="addItem(document.getElementById('mouse'))">+</button>
+        </div>
+       </div>
+     </div>
+
+     <div class="container boundingbox">
+      <div class="row">
+         <div class="col-sm-3">
+          <img src="images/rx580.png" alt="gpu">
+        </div>
+        <div class="col-sm-3">
+          Graphics Card
+        </div>
+        <div class="col-sm-3" id="gpuPrice">
+          $1999.99
+        </div>
+        <div class="col-sm-3">
+          <button type="button" onclick="removeItem(document.getElementById('gpu'))">-</button>
+          <p id="gpu">0</p>
+          <button type="button" onclick="addItem(document.getElementById('gpu'))">+</button>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+   
+    <!-- box for payment -->
+
+    <div class="checkout">
+     <div class="container paymentbox">
+       <div class="row">
+         <div class="col">
+          
+          <br> 
+          Subtotal: $<p id="Subtotal">0</p> 
+          <br>
+          Items: <p id="amountItems">0</p>
+        </div>
+        
+        <div class="col">
+           <br>
+            <button type="button" id="checkoutButton"> Checkout </button>
+           <button type="button" id="removeCart" onclick="emptyCart()"> Empty Cart </button>
+          </div>
+
+
+      
+        </div>
+      </div>
+    </div>
+  
+
+
+  </div>
+
+
+</div>
+
+</div>
+ <hr>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "VCR OSD MONO";
+  src: url(./font/VCR_OSD_MONO_1.001.ttf);
+  }
+
+  body{
+      font-family: VCR OSD MONO;
+  }
+
+
+  h1{
+
+    font-size: 100px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  h2{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  hr{
+    color: black;
+  }
+
+  .headings{
+    font-size: 40px;
+    margin-left: 10px;
+    text-decoration: underline;
+
+  }
+
+  .boundingbox{
+    font-size: 40px;
+    margin-left: 10px;
+    padding-top: 20px;
+    
+  }
+
+  .paymentbox{
+    font-size: 40px;
+    margin-left: 10px;
+    
+
+  }
+
+  .amount{
+    width: 80px;
+  }
+
+
+
+  img{
+    width: 250px;
+    height: 160px;
+    
+  }
+
+  p{
+    display: inline-block;
+  }
+
+  #checkoutButton{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-right: 150px;
+    float: right;
+    padding-right: 40px;
+    
+  }
+
+  #removeCart{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 150px;
+    float: right;
+  }
+
+
